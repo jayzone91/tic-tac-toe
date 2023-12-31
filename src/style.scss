@@ -1,0 +1,29 @@
+@import "./node_modules/bootstrap/scss/bootstrap.scss";
+
+$rowHeigt: 20rem;
+
+.field {
+  max-width: $rowHeigt !important;
+  aspect-ratio: 1/1;
+}
+
+.tRow {
+  max-width: calc($rowHeigt * 3);
+}
+
+.GameBoard {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
+}
+
+.square {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+
+  h1 {
+    font-size: 7rem;
+  }
+}
