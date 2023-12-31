@@ -172,7 +172,6 @@ function Board() {
                 className="field border"
                 style={{ cursor: square.clicked ? "auto" : "pointer" }}
                 onClick={() => handleClick(square.id)}
-                sm={4}
               >
                 <div className="square">
                   <h1>{square.value}</h1>
